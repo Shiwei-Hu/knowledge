@@ -8,5 +8,24 @@
     <artifactId>knowledge</artifactId>
     <version>1.0-SNAPSHOT</version>
 
+    <modules>
+        <module>knowledge-common</module>
+        <module>knowledge-pojo</module>
+        <module>knowledge-mapper</module>
+        <module>knowledge-service</module>
+        <module>knowledge-api</module>
+    </modules>
+
+    <!--该项目为聚合工程项目  打包方式为 pom-->
+    <packaging>pom</packaging>
+
+    <!--统一项目的编码格式 UTF-8-->
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+        <maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+    </properties>
 
 </project>
